@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="reviewProductReiview01Model" type="com.test_.app.modules.reviewproductreiview01.data.model.ReviewProductReiview01Model"/>
+    </data>
+    <LinearLayout android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecornerRadius">
+        <LinearLayout android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_48px"
+                android:layout_width="@dimen/_48px"
+                android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_8a7d68fe92be1f29404445476407d81857a346d3}"/>
+            <LinearLayout android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16px"
+                android:layout_weight="0.73" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/lbl_james_lawson" style="@style/textStylePoppinsbold14_2"/>
+                <LinearLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16px"
+                    android:layout_marginTop="@dimen/_4px"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:numStars="5"
+                        android:progressTint="@color/yellow_700"
+                        android:rating="5" style="@style/Widget.AppCompat.RatingBar.Small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@string/msg_air_max_are_alw" style="@style/textStylePoppinsregular12"/>
+        <LinearLayout android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_72px"
+                android:layout_width="@dimen/_72px"
+                android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_b76f5fae7367857d3a51392317bbd19925f7f331}"/>
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginStart="@dimen/_12px"
+                android:layout_width="@dimen/_72px"
+                android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_9a0ca7861a0e3fe8dc274d347ebe01fe3d5a59a3}"/>
+            <ImageView android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginStart="@dimen/_12px"
+                android:layout_width="@dimen/_72px"
+                android:scaleType="fitCenter" circular="@{true}" imageRes="@{@drawable/_2a8afdbf76f79435ab499fbd1a57ab1bbac7e6ed}"/>
+        </LinearLayout>
+        <TextView android:gravity="top|start"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16px"
+            android:layout_width="match_parent"
+            android:text="@string/msg_december_10_20" style="@style/textStylePoppinsregular10"/>
+    </LinearLayout>
+</layout>

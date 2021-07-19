@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="offerScreen1VM" type="com.test_.app.modules.offerscreen1.data.viewmodel.OfferScreen1VM"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_16px"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_offer" style="@style/textStylePoppinsbold16"/>
+                <TextView android:gravity="top|start"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_44px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_16px"
+                    android:paddingStart="@dimen/_16px"
+                    android:paddingTop="@dimen/_16px"
+                    android:text="@string/msg_use_megsl" style="@style/textStylePoppinsbold16_2"/>
+                <include android:id="@+id/included"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent"
+                    layout="@layout/component_offer_screen" offerScreenModel="@{offerScreen1VM.includedModel}"/>
+                <FrameLayout android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16px"
+                    android:layout_width="match_parent" style="@style/groupStylecornerRadius">
+                    <ImageView android:layout_gravity="center"
+                        android:layout_height="@dimen/_206px"
+                        android:layout_width="@dimen/_343px"
+                        android:scaleType="fitCenter" imageRes="@{@drawable/_ba8f23d42c43c6ccba1373e3b6ca69ee720461ae}"/>
+                    <LinearLayout android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@string/msg_90_off_super_m" style="@style/textStylePoppinsbold24"/>
+                        <TextView android:gravity="top|start"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_16px"
+                            android:layout_width="match_parent"
+                            android:text="@string/msg_special_birthda" style="@style/textStylePoppinsregular12_4"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@+id/included1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_57px"
+            android:layout_width="match_parent"
+            layout="@layout/component_offer_screen_bottombar" offerScreenBottombarModel="@{offerScreen1VM.included1Model}"/>
+    </LinearLayout>
+</layout>
